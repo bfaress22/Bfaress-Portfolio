@@ -1,7 +1,6 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Sparkles } from 'lucide-react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -12,7 +11,7 @@ const Navigation = () => {
       setIsScrolled(window.scrollY > 50);
       
       // Détection de la section active
-      const sections = ['home', 'about', 'innovation', 'education', 'experience', 'skills', 'contact'];
+      const sections = ['home', 'about', 'education', 'experience', 'skills', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -41,7 +40,6 @@ const Navigation = () => {
   const navItems = [
     { id: 'home', label: 'Accueil' },
     { id: 'about', label: 'À propos' },
-    { id: 'innovation', label: 'Innovation' },
     { id: 'education', label: 'Formation' },
     { id: 'experience', label: 'Expérience' },
     { id: 'skills', label: 'Compétences' },
@@ -56,13 +54,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <div 
             onClick={() => scrollToSection('home')}
-            className="text-2xl font-bold gradient-text cursor-pointer hover:scale-105 transition-transform flex items-center gap-2"
+            className="text-2xl font-bold gradient-text cursor-pointer hover:scale-105 transition-transform"
           >
-            <Sparkles className="w-6 h-6" />
             BF
           </div>
           
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -83,10 +80,9 @@ const Navigation = () => {
           
           <Button 
             onClick={() => scrollToSection('contact')}
-            className="bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-pink transition-all duration-300 transform hover:scale-105 neon-border shadow-[0_0_20px_rgba(0,240,255,0.3)]"
+            className="bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-pink transition-all duration-300 transform hover:scale-105 neon-border"
           >
-            <Sparkles className="mr-2 w-4 h-4" />
-            Collaborons
+            Contactez-moi
           </Button>
         </div>
       </div>

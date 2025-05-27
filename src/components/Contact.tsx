@@ -35,48 +35,25 @@ const Contact = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className={`transition-all duration-1000 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            <span className="gradient-text">Parlons Innovation Digitale</span>
+            <span className="gradient-text">Contactez-moi</span>
           </h2>
           
           <div className="max-w-4xl mx-auto">
             <div className="glass-card p-12 neon-border text-center">
-              <h3 className="text-3xl font-bold text-neon-blue mb-6">
-                Votre Futur Consultant en Innovation Digitale
+              <h3 className="text-2xl font-bold text-neon-blue mb-6">
+                Prêt à collaborer sur votre prochain projet ?
               </h3>
               
-              <div className="space-y-6 mb-8">
-                <p className="text-gray-300 text-lg leading-relaxed">
-                  Je recherche une <span className="text-neon-blue font-semibold">alternance de 12 mois</span> à partir de 
-                  <span className="text-neon-purple font-semibold"> septembre 2025</span> dans le domaine de 
-                  l'<span className="text-neon-pink font-semibold">innovation digitale et du conseil</span>.
-                </p>
-                
-                <div className="grid md:grid-cols-3 gap-4 my-8">
-                  <div className="p-4 bg-neon-blue/10 rounded-lg border border-neon-blue/30">
-                    <h4 className="text-neon-blue font-semibold mb-2">Transformation Digitale</h4>
-                    <p className="text-gray-300 text-sm">Stratégies d'innovation et mise en œuvre</p>
-                  </div>
-                  <div className="p-4 bg-neon-purple/10 rounded-lg border border-neon-purple/30">
-                    <h4 className="text-neon-purple font-semibold mb-2">Solutions IA</h4>
-                    <p className="text-gray-300 text-sm">IA générative et analytics avancés</p>
-                  </div>
-                  <div className="p-4 bg-neon-pink/10 rounded-lg border border-neon-pink/30">
-                    <h4 className="text-neon-pink font-semibold mb-2">Fintech Innovation</h4>
-                    <p className="text-gray-300 text-sm">Solutions financières disruptives</p>
-                  </div>
-                </div>
-                
-                <p className="text-gray-300 text-lg leading-relaxed">
-                  Discutons de la façon dont je peux contribuer à vos 
-                  <span className="text-neon-green font-semibold"> projets d'innovation</span> et accompagner votre 
-                  <span className="text-neon-blue font-semibold"> transformation digitale</span> !
-                </p>
-              </div>
+              <p className="text-gray-300 text-lg mb-8 leading-relaxed">
+                Je recherche une alternance de 12 mois à partir de septembre 2025 dans le domaine de 
+                l'innovation digitale et du conseil. Discutons de la façon dont je peux contribuer à 
+                vos projets ambitieux !
+              </p>
               
               <div className="space-y-6">
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a href="mailto:bilalfaress22@gmail.com">
-                    <Button className="bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-pink transition-all duration-300 transform hover:scale-105 px-8 py-6 text-lg neon-border w-full sm:w-auto shadow-[0_0_30px_rgba(0,240,255,0.4)]">
+                    <Button className="bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-pink transition-all duration-300 transform hover:scale-105 px-8 py-6 text-lg neon-border w-full sm:w-auto">
                       📧 bilalfaress22@gmail.com
                     </Button>
                   </a>
