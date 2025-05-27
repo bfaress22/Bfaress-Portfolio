@@ -47,8 +47,11 @@ const Hero = () => {
           </h1>
           
           <div className="text-xl md:text-2xl text-gray-300 mb-4">
-            <span className="text-neon-blue">Analyste Quantitatif</span> & 
-            <span className="text-neon-purple"> Développeur</span>
+            <span className="text-neon-blue">Je cherche une alternance de 12 mois</span>
+          </div>
+          
+          <div className="text-lg md:text-xl text-gray-300 mb-4">
+            <span className="text-neon-purple">en innovation digital conseil</span>
           </div>
           
           <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
