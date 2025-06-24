@@ -122,30 +122,6 @@ const Skills = () => {
               ))}
             </div>
           </div>
-
-          {/* Projet de Recherche Highlight */}
-          <div className="mt-12 glass-card p-8 border border-neon-blue/50">
-            <h3 className="text-2xl font-bold text-neon-blue text-center mb-6">
-              💡 Projet de Recherche Phare
-            </h3>
-            <div className="max-w-3xl mx-auto">
-              <h4 className="text-xl font-semibold text-white mb-4">
-                Filtre de Kalman et Application en Finance
-              </h4>
-              <p className="text-gray-300 mb-4 leading-relaxed">
-                Mémoire de Master explorant l'application des filtres de Kalman dans la modélisation financière, 
-                combinant méthodes ARIMA traditionnelles avec des approches de filtrage avancées.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-neon-purple/20 text-neon-purple text-sm rounded">ARIMA</span>
-                <span className="px-3 py-1 bg-neon-purple/20 text-neon-purple text-sm rounded">Filtre de Kalman</span>
-                <span className="px-3 py-1 bg-neon-purple/20 text-neon-purple text-sm rounded">Modèle hybride ARIMA-Kalman</span>
-                <span className="px-3 py-1 bg-neon-green/20 text-neon-green text-sm rounded">Python</span>
-                <span className="px-3 py-1 bg-neon-green/20 text-neon-green text-sm rounded">pykalman</span>
-                <span className="px-3 py-1 bg-neon-green/20 text-neon-green text-sm rounded">statsmodels</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
