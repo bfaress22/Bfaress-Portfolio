@@ -1,73 +1,73 @@
-# Welcome to your Lovable project
+# 🚀Portfolio de Bilal Faress
 
-## Project info
+> Portfolio web moderne et interactif présentant mon parcours dans l'innovation digitale et la finance quantitative.
 
-**URL**: https://lovable.dev/projects/c1e98666-6074-487c-8f46-099ca2f04f8e
+## 🎯 À propos
 
-## How can I edit this code?
+Je suis actuellement admis en **M2 Innovation Digital Conseil** à l'Université Paris-Saclay pour l'année 2025-2026, et je recherche une **alternance de 12 mois** à partir de septembre 2025.
 
-There are several ways of editing your application.
+Passionné par l'intersection entre la **data science**, la **finance quantitative** et l'**innovation digitale**, je conçois des solutions créatives pour résoudre les défis complexes de demain.
 
-**Use Lovable**
+## 🛠️ Technologies utilisées
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c1e98666-6074-487c-8f46-099ca2f04f8e) and start prompting.
+- **Frontend**: React, TypeScript, Vite
+- **Styling**: Tailwind CSS, shadcn/ui
+- **Animations**: CSS3 avec effets cyber/neon
+- **Déploiement**: Vercel
+- **Outils**: Cursor, GitHub
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📋 Sections du portfolio
 
-**Use your preferred IDE**
+- **🏠 Accueil**: Présentation avec effet visuel cyber
+- **👤 À propos**: Profil personnel et centres d'intérêt
+- **🎓 Formation**: Master en Analyse Économique et M2 Innovation Digital
+- **💼 Expérience**: Stage TISA Consulting, organisation d'événements, HCP
+- **🎯 Compétences**: Analytics, programmation, certifications
+- **📞 Contact**: Informations de contact et réseaux sociaux
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🌟 Points forts
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 💡 Projet de recherche phare
+**Filtre de Kalman et Application en Finance**
+- Méthodes: ARIMA, Filtre de Kalman, modèle hybride ARIMA-Kalman
+- Technologies: Python (pykalman, statsmodels, matplotlib, pandas, numpy, yfinance, scipy, sklearn), LaTeX
 
-Follow these steps:
+### 🔧 Compétences techniques
+- **Analyse**: Méthode agile, automatisation, data visualisation, IA générative
+- **Programmation**: Python, R, SQL, Next.js, LaTeX
+- **Outils**: Cursor, Power BI, XLSTAT, MS Office Suite, GitHub, Vercel
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 📜 Certifications récentes (2024-2025)
+- Building AI Powered Chatbots Without Programming (IBM & Coursera)
+- Foundations of Project Management (Google & Coursera)
+- Formation Communication en Anglais (Centre EDEMIA)
+- Python for Finance (365 Data Science)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Installation et développement
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Cloner le repository
+git clone https://github.com/bfaress22/portfolio.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Installer les dépendances
+npm install
+
+# Lancer en mode développement
 npm run dev
+
+# Build de production
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## 📬 Contact
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Email**: bilalfaress22@gmail.com
+- **Téléphone**: +33 6 38 05 46 66
+- **LinkedIn**: [bilal-faress-1929401b1](https://www.linkedin.com/in/bilal-faress-1929401b1/)
+- **GitHub**: [bfaress22](https://github.com/bfaress22)
+- **Localisation**: Paris, France / Rabat, Maroc
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c1e98666-6074-487c-8f46-099ca2f04f8e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**🔍 Recherche active d'alternance** - 12 mois à partir de septembre 2025  
+*Innovation digitale • Conseil • Data Science • Finance quantitative*

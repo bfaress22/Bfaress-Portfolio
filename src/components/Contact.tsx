@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin } from 'lucide-react';
@@ -57,6 +56,11 @@ const Contact = () => {
                       📧 bilalfaress22@gmail.com
                     </Button>
                   </a>
+                  <a href="tel:+212622430629">
+                    <Button variant="outline" className="border-neon-blue/50 text-neon-blue hover:bg-neon-blue/10 transition-all duration-300 transform hover:scale-105 px-8 py-6 text-lg w-full sm:w-auto">
+                      📞 +212 6 22 43 06 29
+                    </Button>
+                  </a>
                 </div>
                 
                 <div className="flex justify-center space-x-6 pt-6">
@@ -80,7 +84,7 @@ const Contact = () => {
                 
                 <div className="pt-6 border-t border-white/10">
                   <p className="text-gray-400">
-                    📍 Basé à Rabat, Maroc • Disponible pour toute la France
+                    📍 Paris, France / Rabat, Maroc • Disponible pour toute la France
                   </p>
                 </div>
               </div>
