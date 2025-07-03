@@ -71,11 +71,6 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
     
     /* Variables personnalisées pour les couleurs néon */
     --neon-blue: #00f0ff;
@@ -87,6 +82,34 @@
   }
 
   [data-theme="warm"] {
+    --background: 22 100% 98%;
+    --foreground: 217 95% 33%;
+
+    --card: 22 100% 98%;
+    --card-foreground: 217 95% 33%;
+
+    --popover: 22 100% 98%;
+    --popover-foreground: 217 95% 33%;
+
+    --primary: 217 95% 33%;
+    --primary-foreground: 22 100% 98%;
+
+    --secondary: 10 88% 85%;
+    --secondary-foreground: 217 95% 33%;
+
+    --muted: 10 88% 93%;
+    --muted-foreground: 217 50% 60%;
+
+    --accent: 10 88% 85%;
+    --accent-foreground: 217 95% 33%;
+
+    --destructive: 10 88% 47%;
+    --destructive-foreground: 22 100% 98%;
+
+    --border: 10 88% 90%;
+    --input: 10 88% 90%;
+    --ring: 217 95% 33%;
+
     /* Variables pour le thème chaud */
     --neon-blue: #093FB4;
     --neon-purple: #ED3500;
@@ -185,7 +208,7 @@
 
 @layer components {
   .glass-card {
-    @apply backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl;
+    @apply backdrop-blur-xl bg-card/80 border border-border rounded-2xl;
   }
   
   .neon-border {
@@ -198,8 +221,8 @@
   
   .cyber-grid-bg {
     background-image: 
-      linear-gradient(rgba(0,240,255,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,240,255,0.03) 1px, transparent 1px);
+      linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
     background-size: 50px 50px;
   }
 }
