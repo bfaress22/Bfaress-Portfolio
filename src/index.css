@@ -33,6 +33,36 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+  }
+
+  [data-theme="warm"] {
+    --background: 25 35% 96%;
+    --foreground: 217 95% 33%;
+
+    --card: 25 35% 96%;
+    --card-foreground: 217 95% 33%;
+
+    --popover: 25 35% 96%;
+    --popover-foreground: 217 95% 33%;
+
+    --primary: 217 95% 33%;
+    --primary-foreground: 25 35% 96%;
+
+    --secondary: 351 87% 89%;
+    --secondary-foreground: 217 95% 33%;
+
+    --muted: 351 87% 89%;
+    --muted-foreground: 217 50% 60%;
+
+    --accent: 351 87% 89%;
+    --accent-foreground: 217 95% 33%;
+
+    --destructive: 10 88% 47%;
+    --destructive-foreground: 25 35% 96%;
+
+    --border: 351 87% 89%;
+    --input: 351 87% 89%;
+    --ring: 217 95% 33%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -54,6 +84,16 @@
     --neon-green: #00ff88;
     --neon-yellow: #ffff00;
     --neon-orange: #ff8800;
+  }
+
+  [data-theme="warm"] {
+    /* Variables pour le thème chaud */
+    --neon-blue: #093FB4;
+    --neon-purple: #ED3500;
+    --neon-pink: #FFD8D8;
+    --neon-green: #093FB4;
+    --neon-yellow: #ED3500;
+    --neon-orange: #ED3500;
   }
 }
 

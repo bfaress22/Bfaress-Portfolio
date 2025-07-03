@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { Menu, X, Zap } from 'lucide-react';
 
 const Navigation = () => {
@@ -100,6 +101,7 @@ const Navigation = () => {
             
             {/* Bouton contact et menu mobile */}
             <div className="flex items-center space-x-4">
+              <ThemeToggle />
               <Button 
                 onClick={() => scrollToSection('contact')}
                 className="hidden sm:block group relative bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-pink transition-all duration-500 transform hover:scale-105 neon-border cyber-pulse overflow-hidden"
