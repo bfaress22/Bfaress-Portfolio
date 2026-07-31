@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Zap, Code, Database } from 'lucide-react';
+import { Github, Linkedin, Sparkles, Workflow, Bot } from 'lucide-react';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [typingText, setTypingText] = useState('');
-  const fullText = 'Innovation • Digital • Conseil';
+  const fullText = 'Transformation Digitale · IA · Automatisation';
 
   useEffect(() => {
     setIsVisible(true);
-    
-    // Animation d'écriture pour le sous-titre
+
     let i = 0;
     const typingInterval = setInterval(() => {
       if (i < fullText.length) {
@@ -19,154 +18,168 @@ const Hero = () => {
       } else {
         clearInterval(typingInterval);
       }
-    }, 100);
+    }, 45);
 
     return () => clearInterval(typingInterval);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden cyber-grid-bg matrix-bg">
-      {/* Particules flottantes */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-neon-blue/10 rounded-full blur-3xl animate-float quantum-float"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-neon-purple/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 right-1/3 w-40 h-40 bg-neon-pink/10 rounded-full blur-2xl animate-float quantum-float" style={{ animationDelay: '4s' }}></div>
-        
-        {/* Éléments tech flottants */}
-        <div className="absolute top-20 left-20 text-neon-blue/30 quantum-float">
-          <Code size={24} />
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden cyber-grid-bg matrix-bg"
+    >
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-neon-blue/10 rounded-full blur-3xl animate-float" />
+        <div
+          className="absolute bottom-1/4 right-1/5 w-96 h-96 bg-neon-purple/10 rounded-full blur-3xl animate-float"
+          style={{ animationDelay: '2s' }}
+        />
+        <div
+          className="absolute top-[55%] right-[28%] w-40 h-40 bg-neon-pink/10 rounded-full blur-2xl quantum-float"
+          style={{ animationDelay: '1.2s' }}
+        />
+
+        <div className="absolute top-24 left-[12%] text-neon-blue/25 quantum-float">
+          <Workflow size={22} />
         </div>
-        <div className="absolute bottom-20 right-20 text-neon-purple/30 quantum-float" style={{ animationDelay: '1s' }}>
-          <Database size={28} />
+        <div
+          className="absolute bottom-28 right-[14%] text-neon-purple/25 quantum-float"
+          style={{ animationDelay: '1s' }}
+        >
+          <Bot size={26} />
         </div>
-        <div className="absolute top-1/3 right-1/4 text-neon-green/30 quantum-float" style={{ animationDelay: '3s' }}>
-          <Zap size={20} />
+        <div
+          className="absolute top-[38%] right-[22%] text-neon-green/25 quantum-float"
+          style={{ animationDelay: '2.4s' }}
+        >
+          <Sparkles size={18} />
         </div>
       </div>
 
-      {/* Réseau neural décoratif */}
-      <div className="absolute inset-0 neural-network-bg pointer-events-none"></div>
+      <div className="absolute inset-0 neural-network-bg pointer-events-none" />
 
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <div className={`transition-all duration-1000 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
-          {/* Photo de profil avec effet hologramme */}
-          <div className="mb-8 flex justify-center">
+      <div className="container mx-auto px-6 text-center relative z-10 pt-24 pb-16">
+        <div className={`transition-opacity duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <div
+            className={`mb-8 flex justify-center ${isVisible ? 'animate-slide-up' : ''}`}
+            style={{ animationDelay: '0.05s' }}
+          >
             <div className="relative">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-neon-blue/50 shadow-[0_0_30px_rgba(0,240,255,0.5)] animate-glow cyber-pulse hologram-effect">
-                <img 
-                  src="/lovable-uploads/0cbe2c23-ed24-40ff-834b-2eb637013fef.JPG" 
+              <div className="w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden border-2 border-neon-blue/50 shadow-[0_0_40px_rgba(0,240,255,0.35)] animate-glow">
+                <img
+                  src="/lovable-uploads/0cbe2c23-ed24-40ff-834b-2eb637013fef.JPG"
                   alt="Bilal Faress"
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Anneaux orbitaux */}
-              <div className="absolute inset-0 rounded-full border-2 border-neon-purple/30 animate-spin" style={{ animationDuration: '20s' }}></div>
-              <div className="absolute inset-2 rounded-full border border-neon-pink/20 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}></div>
-              
-              {/* Badge de statut */}
-              <div className="absolute -bottom-2 -right-2 px-3 py-1 bg-neon-green/20 text-neon-green text-xs rounded-full border border-neon-green/50 animate-pulse">
-                Disponible
+              <div
+                className="absolute -inset-3 rounded-full border border-neon-purple/25 pointer-events-none"
+                style={{ animation: 'orbit 22s linear infinite' }}
+              />
+              <div
+                className="absolute -inset-6 rounded-full border border-dashed border-neon-pink/15 pointer-events-none"
+                style={{ animation: 'orbit 32s linear infinite reverse' }}
+              />
+              <div className="absolute -bottom-1 right-2 px-3 py-1 bg-neon-green/15 text-neon-green text-xs font-medium rounded-full border border-neon-green/40 backdrop-blur-sm">
+                Dispo. sept. 2026
               </div>
             </div>
           </div>
 
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 relative">
+          <p
+            className={`text-sm uppercase tracking-[0.25em] text-neon-blue/80 mb-4 font-mono ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+            style={{ animationDelay: '0.15s' }}
+          >
+            Paris · ENGIE · Paris-Saclay
+          </p>
+
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-5 relative tracking-tight">
             <span className="gradient-text animate-pulse-neon">Bilal Faress</span>
-            {/* Effet de glitch subtil */}
-            <span className="absolute inset-0 gradient-text opacity-20 glitch-text" style={{ animationDelay: '0.1s' }}>
+            <span
+              className="absolute inset-0 gradient-text opacity-15 glitch-text pointer-events-none"
+              aria-hidden
+            >
               Bilal Faress
             </span>
           </h1>
-          
-          {/* Sous-titre avec animation de frappe */}
-          <div className="text-xl md:text-2xl text-gray-300 mb-4 min-h-[2rem]">
-            <span className="text-neon-blue font-mono">{'>'} </span>
-            <span className="typing-text text-neon-blue">{typingText}</span>
+
+          <div className="text-lg md:text-xl text-gray-300 mb-5 min-h-[1.75rem] font-mono">
+            <span className="text-neon-green/80">{'>'}</span>{' '}
+            <span className="text-neon-blue">{typingText}</span>
+            <span className="inline-block w-2 h-5 ml-0.5 align-middle bg-neon-green/80 animate-pulse" />
           </div>
-          
-          <div className="text-lg md:text-xl text-gray-300 mb-4">
-            <span className="text-neon-purple hologram-effect">🎯 Recherche alternance 12 mois • Sept. 2025</span>
-          </div>
-          
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed hologram-effect">
-            Actuellement admis en M2 Innovation Digital Conseil à l'Université Paris-Saclay, 
-            je recherche une alternance de 12 mois à partir de septembre 2025. Curieux, rigoureux 
-            et passionné par la data et les technologies innovantes, je conçois des solutions 
-            digitales combinant analyse, visualisation et automatisation.
+
+          <p className="text-base md:text-lg text-neon-purple/90 mb-4 font-medium">
+            Alternant Product Control Trading Gaz — ENGIE
           </p>
-          
-          {/* Boutons avec effets améliorés */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <Button 
-              onClick={() => scrollToSection('about')}
-              className="group relative bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-pink transition-all duration-500 transform hover:scale-110 px-8 py-6 text-lg neon-border cyber-pulse overflow-hidden"
+
+          <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Consultant en transformation digitale en formation (M2 Innovation, Digital &amp; Conseil).
+            Je transforme des besoins métier en solutions concrètes : automatisation, apps web et agents IA —
+            du cadrage à la mise en production.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+            <Button
+              onClick={() => scrollToSection('experience')}
+              className="group relative bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-pink transition-all duration-500 hover:scale-[1.03] px-8 py-6 text-base neon-border overflow-hidden"
             >
-              <span className="relative z-10">Découvrir mon parcours</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              <span className="relative z-10">Voir mon expérience</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             </Button>
-            
-            <Button 
+
+            <Button
               onClick={() => scrollToSection('contact')}
               variant="outline"
-              className="group relative border-neon-blue/50 text-neon-blue hover:bg-neon-blue/10 transition-all duration-500 transform hover:scale-110 px-8 py-6 text-lg hologram-effect overflow-hidden"
+              className="group border-neon-blue/50 text-neon-blue hover:bg-neon-blue/10 transition-all duration-500 hover:scale-[1.03] px-8 py-6 text-base overflow-hidden"
             >
-              <span className="relative z-10">Me contacter</span>
-              <div className="absolute inset-0 bg-neon-blue/5 scale-0 group-hover:scale-100 transition-transform duration-300 rounded"></div>
+              Me contacter
             </Button>
           </div>
-          
-          {/* Réseaux sociaux avec effets 3D */}
-          <div className="flex justify-center space-x-6">
-            <a 
-              href="https://www.linkedin.com/in/bilal-faress-1929401b1/" 
-              target="_blank" 
+
+          <div className="flex justify-center gap-5">
+            <a
+              href="https://www.linkedin.com/in/bilal-faress-1929401b1/"
+              target="_blank"
               rel="noopener noreferrer"
-              className="group p-4 rounded-full glass-card neon-border hover:bg-neon-blue/10 transition-all duration-500 transform hover:scale-125 hover:rotate-12 cyber-pulse"
+              aria-label="LinkedIn"
+              className="group relative p-3.5 rounded-full glass-card neon-border hover:bg-neon-blue/10 transition-all duration-400 hover:scale-110"
             >
-              <Linkedin className="w-7 h-7 text-neon-blue group-hover:text-white transition-colors duration-300" />
-              <div className="absolute inset-0 rounded-full bg-neon-blue/20 scale-0 group-hover:scale-150 transition-transform duration-500 blur-md"></div>
+              <Linkedin className="w-6 h-6 text-neon-blue group-hover:text-white transition-colors" />
             </a>
-            <a 
-              href="https://github.com/bfaress22" 
-              target="_blank" 
+            <a
+              href="https://github.com/bfaress22"
+              target="_blank"
               rel="noopener noreferrer"
-              className="group p-4 rounded-full glass-card neon-border hover:bg-neon-purple/10 transition-all duration-500 transform hover:scale-125 hover:rotate-12 cyber-pulse"
+              aria-label="GitHub"
+              className="group relative p-3.5 rounded-full glass-card border border-neon-purple/40 hover:bg-neon-purple/10 transition-all duration-400 hover:scale-110"
             >
-              <Github className="w-7 h-7 text-neon-purple group-hover:text-white transition-colors duration-300" />
-              <div className="absolute inset-0 rounded-full bg-neon-purple/20 scale-0 group-hover:scale-150 transition-transform duration-500 blur-md"></div>
+              <Github className="w-6 h-6 text-neon-purple group-hover:text-white transition-colors" />
             </a>
           </div>
         </div>
       </div>
 
-      {/* Indicateur de scroll amélioré */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="relative">
-          <div className="w-6 h-10 border-2 border-neon-blue/50 rounded-full flex justify-center cyber-pulse">
-            <div className="w-1 h-3 bg-neon-blue rounded-full mt-2 animate-pulse"></div>
-          </div>
-          <div className="absolute -inset-2 border border-neon-blue/20 rounded-full animate-ping"></div>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce opacity-70">
+        <div className="w-5 h-9 border-2 border-neon-blue/40 rounded-full flex justify-center">
+          <div className="w-1 h-2.5 bg-neon-blue rounded-full mt-2 animate-pulse" />
         </div>
       </div>
 
-      {/* Lignes de données en mouvement */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {[...Array(5)].map((_, i) => (
+      <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-40">
+        {[0, 1, 2].map((i) => (
           <div
             key={i}
-            className="absolute h-px bg-gradient-to-r from-transparent via-neon-blue/30 to-transparent"
+            className="absolute h-px bg-gradient-to-r from-transparent via-neon-blue/40 to-transparent"
             style={{
-              top: `${20 + i * 15}%`,
+              top: `${25 + i * 20}%`,
               width: '100%',
-              animation: `data-stream ${3 + i}s linear infinite`,
-              animationDelay: `${i * 0.5}s`,
+              animation: `data-stream ${5 + i}s linear infinite`,
+              animationDelay: `${i * 1.2}s`,
             }}
           />
         ))}
