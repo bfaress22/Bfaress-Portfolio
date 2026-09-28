@@ -44,15 +44,13 @@ const About = () => {
                   <Brain className="text-neon-blue w-6 h-6" />
                   <h3 className="text-2xl font-bold text-neon-blue">Profil</h3>
                 </div>
-                <p className="text-gray-300 leading-relaxed mb-4">
-                  Consultant en transformation digitale en formation (M2 Innovation, Digital &amp; Conseil –
-                  Université Paris-Saclay), je transforme des besoins métier en solutions concrètes :
-                  automatisation de processus, développement d&apos;applications web et déploiement d&apos;agents IA.
-                </p>
                 <p className="text-gray-300 leading-relaxed mb-5">
-                  Expérience opérationnelle de la digitalisation en environnement complexe, du cadrage à la
-                  mise en production : analyse des besoins, recherche utilisateur, prototypage rapide
-                  (low-code/no-code) et accompagnement des utilisateurs.
+                  Profil hybride finance / digital, avec une expérience opérationnelle chez ENGIE Supply &amp;
+                  Energy Management en environnement de trading gaz. Expérience sur les processus post-trade,
+                  le contrôle et la validation des transactions, le suivi des données financières, les clôtures
+                  mensuelles et le suivi des risques de marché. Habitué à travailler à l&apos;interface entre Front
+                  Office, Finance et IT, avec une sensibilité aux enjeux de data, d&apos;automatisation et
+                  d&apos;amélioration des processus financiers.
                 </p>
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-neon-blue/15 text-neon-blue rounded-full text-sm font-medium border border-neon-blue/30">
                   Disponible à partir de septembre 2026

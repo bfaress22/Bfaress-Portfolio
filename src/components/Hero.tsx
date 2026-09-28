@@ -5,7 +5,7 @@ import { Github, Linkedin, Sparkles, Workflow, Bot } from 'lucide-react';
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [typingText, setTypingText] = useState('');
-  const fullText = 'Transformation Digitale · IA · Automatisation';
+  const fullText = 'Finance ·Transformation Digitale · IA · Automatisation';
 
   useEffect(() => {
     setIsVisible(true);
@@ -118,9 +118,11 @@ const Hero = () => {
           </p>
 
           <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Consultant en transformation digitale en formation (M2 Innovation, Digital &amp; Conseil).
-            Je transforme des besoins métier en solutions concrètes : automatisation, apps web et agents IA —
-            du cadrage à la mise en production.
+            Profil hybride finance / digital, avec une expérience opérationnelle chez ENGIE Supply &amp; Energy
+            Management en environnement de trading gaz. Expérience sur les processus post-trade, le contrôle et
+            la validation des transactions, le suivi des données financières, les clôtures mensuelles et le
+            suivi des risques de marché. Habitué à travailler à l&apos;interface entre Front Office, Finance et IT,
+            avec une sensibilité aux enjeux de data, d&apos;automatisation et d&apos;amélioration des processus financiers.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
